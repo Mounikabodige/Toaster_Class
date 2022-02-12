@@ -1,5 +1,10 @@
+/**
+ * The following class converts any string given to an array.
+ * Considered basic negative , positive and Zero values as a string.
+ * Time Complexity: O(n)
+ * Space Complexity : O(n)
+ */
 public class StringToInteger {
-
     public static void main(String[] args){
         System.out.println(convertToInteger("111"));
         System.out.println(convertToInteger("-111"));
@@ -21,10 +26,12 @@ public class StringToInteger {
         if(input.length() == 1 && input.charAt(0) == '0'){
             return 0;
         }
+
         if(input.charAt(0) == '-'){
             i = 1;
             negativeNumber = true;
         }
+
         if(input.charAt(0) =='+'){
             i = 1;
         }
